@@ -235,7 +235,6 @@
     </div>
 </div>
 <script>
-    /* View in fullscreen */
     function openFullscreen() {
       var elem = document.documentElement;
       if (elem.requestFullscreen) {
@@ -244,7 +243,6 @@
         elem.webkitRequestFullscreen();
       } else if (elem.msRequestFullscreen) { /* IE11 */
         elem.msRequestFullscreen();
-        
       } 
       clearInterval(interval_obj);
     };
