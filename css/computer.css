@@ -7,30 +7,37 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   font-family: Helvetica, Arial, Sans-serif;
 }
+
 @font-face {
   font-family: 'Freight Sans Medium';
   src: url('fonts/Freight Sans Medium.otf');
 }
+
 .clearfix::after {
   content: "";
   clear: both;
   display: table;
 }
+
 a {
   color: #365899;
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }
+
 @media screen and (min-width: 481px) {
   input:focus {
     outline: none;
   }
+
   select:focus {
     outline: none;
   }
@@ -41,14 +48,16 @@ a:hover {
 header {
   height: 83px;
   width: 100%;
-  background-image: linear-gradient(#4D68A1 0%,#48649F 10%,#45629D 20%,#415E9B 30%,#3E5B99 40%,#3B5998 50%);
+  background-image: linear-gradient(#4D68A1 0%, #48649F 10%, #45629D 20%, #415E9B 30%, #3E5B99 40%, #3B5998 50%);
   min-width: 980px;
 }
+
 .headersubdiv {
   margin: auto;
   height: 82px;
   width: 980px;
 }
+
 .fblogo {
   margin: 0;
   padding: 0;
@@ -57,6 +66,7 @@ header {
   width: 171px;
   float: left;
 }
+
 .loginform {
   margin: 0;
   padding: 0;
@@ -64,6 +74,7 @@ header {
   border-collapse: collapse;
   float: right;
 }
+
 .logintext {
   width: 148px;
   height: 21px;
@@ -73,16 +84,21 @@ header {
   line-height: 16.06px;
   vertical-align: middle;
 }
+
 .loginfield {
   color: black;
 }
-.loginrowgap { /*Horizontal gap between login fields*/
+
+.loginrowgap {
+  /*Horizontal gap between login fields*/
   margin-left: 14px;
 }
+
 #forgotpw {
   color: #9cb4d8;
   vertical-align: top;
 }
+
 #loginbutton {
   color: white;
   background-color: #4267B2;
@@ -91,6 +107,7 @@ header {
   font-weight: bold;
   cursor: pointer;
 }
+
 #loginbutton:hover {
   background-color: #365899;
 }
@@ -98,19 +115,22 @@ header {
 
 /* Styles for mid-section */
 .maindiv {
-  background-image: linear-gradient(rgba(255,0,0,0), rgba(211,216,232));
+  background-image: linear-gradient(rgba(255, 0, 0, 0), rgba(211, 216, 232));
   width: 100%;
   min-width: 980px;
 }
+
 .mainsubdiv {
   margin: auto;
   height: 572px;
   width: 980px;
 }
+
 .welcome {
   width: 565px;
   float: left;
 }
+
 .welcometext {
   width: 450px;
   margin-top: 40px;
@@ -121,6 +141,7 @@ header {
   color: #0E385F;
   word-spacing: -1px;
 }
+
 .welcomepic {
   width: inherit;
 }
@@ -130,12 +151,14 @@ header {
   margin-left: 14px;
   float: left;
 }
+
 .createaccount {
   padding: 20px 0 20px 0;
   width: 400px;
   height: 78px;
   margin-bottom: 35px;
 }
+
 .createh1 {
   font-family: inherit;
   font-size: 35px;
@@ -144,6 +167,7 @@ header {
   line-height: 48.24px;
   margin-bottom: 5px;
 }
+
 .createp {
   font-family: inherit;
   color: #1D2129;
@@ -154,6 +178,7 @@ header {
 .signupform {
   width: 400px;
 }
+
 .signuptextbox {
   border-radius: 5px;
   height: 21px;
@@ -162,19 +187,24 @@ header {
   margin-bottom: 8px;
   border: 1px solid #C0C9DA;
 }
+
 .signuptextbox::-webkit-input-placeholder {
   color: #999999;
 }
+
 .namebox {
   width: 48.75%;
   display: inline-block;
 }
+
 .namebox1 {
   float: left;
 }
+
 .namebox2 {
   float: right;
 }
+
 .mobilepw {
   width: 100%;
 }
@@ -183,28 +213,34 @@ header {
   margin: 0;
   margin: 10px 0 5px 0;
 }
+
 .dobdiv {
   width: 100%;
   height: 40px;
 }
+
 .dob {
   padding: 5px 5px 5px 5px;
   border: 1px solid #BDC7D8;
 }
+
 .day {
   width: 58px;
   height: 30px;
   margin-right: -5.8px;
 }
+
 .month {
   width: 71px;
   height: 30px;
   margin-right: -5.8px;
 }
+
 .year {
   width: 63px;
   height: 30px;
 }
+
 #whydb {
   margin-left: 5px;
   font-family: inherit;
@@ -214,6 +250,7 @@ header {
   vertical-align: middle;
   position: relative;
 }
+
 #whydbtooltip {
   height: 141px;
   width: 312px;
@@ -230,6 +267,7 @@ header {
   border-radius: 3px;
   z-index: 1;
 }
+
 #hrtooltip {
   width: 288px;
   border: 0.5px solid #DDDFE2;
@@ -237,6 +275,7 @@ header {
   margin-top: 15px;
   margin-bottom: 10px;
 }
+
 #whydbtooltipbutton {
   border: 1px solid #4267B2;
   border-radius: 2px;
@@ -248,10 +287,12 @@ header {
   width: 30px;
   float: right;
 }
+
 #whydbtooltipbutton:hover {
   background-color: #365899;
   border-color: #365899;
 }
+
 #whydbtooltip::after {
   content: "";
   position: absolute;
@@ -260,6 +301,7 @@ header {
   border: 6px solid;
   border-color: transparent transparent transparent white;
 }
+
 #whydb:hover #whydbtooltip {
   visibility: visible;
 }
@@ -267,12 +309,15 @@ header {
 .gender {
   margin: 6px 0 0 0;
 }
+
 #femalediv {
   padding: 5px 0 5px 4px;
 }
+
 #malediv {
   padding: 5px 0 5px 12px;
 }
+
 .gendertext {
   font-size: 18px;
   line-height: 18px;
@@ -287,6 +332,7 @@ header {
   width: 316px;
   line-height: 14.74px;
 }
+
 .linksinterms {
   color: #365899;
 }
@@ -299,7 +345,7 @@ header {
   font-weight: 600;
   letter-spacing: 1px;
   color: #fff;
-  text-shadow: 1px 2px 3px rgba(0,0,0,0.5);
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
   margin: 10px 0 10px 0;
   padding: 7px 20px 7px 20px;
   height: 39px;
@@ -307,9 +353,10 @@ header {
   border: 1px solid;
   border-radius: 5px;
   border-color: #3b6e22 #3b6e22 #2c5115;
-  box-shadow: inset 0 1px 1px  #a4e388;
+  box-shadow: inset 0 1px 1px #a4e388;
   cursor: pointer;
 }
+
 #signupbutton:hover {
   background-image: linear-gradient(rgb(115, 185, 98), rgb(87, 136, 67));
 }
@@ -333,11 +380,13 @@ footer {
   min-width: 980px;
   padding-bottom: 30px;
 }
+
 #footersubdiv {
   height: auto;
   width: 980px;
   margin: auto;
 }
+
 #languagediv {
   display: flex;
   justify-content: flex-start;
@@ -347,14 +396,17 @@ footer {
   width: inherit;
   margin-top: 43px;
 }
+
 .language {
   font-size: 12px;
   display: inline-block;
   padding-right: 10px;
 }
+
 #currentlang {
   color: #737373;
 }
+
 #morelang {
   display: inline-block;
   height: 19.5px;
@@ -363,9 +415,11 @@ footer {
   border: 1px solid rgb(204, 208, 213);
   position: relative;
 }
+
 #morelang:hover {
   background-color: #EBEDF0;
 }
+
 footer #languagediv .fa {
   color: #4b4f56;
   font-size: 12px;
@@ -384,10 +438,12 @@ footer #languagediv .fa {
   margin-top: 13px;
   margin-bottom: 13px;
 }
+
 #extralinksdiv {
   height: 57px;
   width: inherit;
 }
+
 .extralinks {
   font-size: 12px;
   display: inline-block;
@@ -399,19 +455,78 @@ footer #languagediv .fa {
   color: #737373;
   margin-top: 33px;
 }
+
 #copyrightfblink {
   color: #737373;
 }
+
 #copyright {
   float: left;
 }
+
 #disclaimer {
   float: right;
 }
+
 footer #copyrightdiv .fa {
   color: #0274b3;
-	font-size: 14px;
+  font-size: 14px;
 }
+
 #pranavks {
-	color: #0274b3;
+  color: #0274b3;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0px;
+  left: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, .5);
+  -webkit-animation: fadein .2s;
+  animation: fadein .2s;
+  -webkit-animation-timing-function: cubic-bezier(.4, 0, .2, 1);
+  animation-timing-function: cubic-bezier(.4, 0, .2, 1);
+  transition: background-color .5s;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  margin: 90px 70px 70px 70px;
+  width: 1300px;
+  height: 700px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 700px;
+  height: 700px;
+  border-radius: 10px;
+}
+
+.name {
+  font-size: 25px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 40px;
+  background-color: floralwhite;
+}
+
+#clickbutton {
+  width: 100%;
+}
+
+.post {
+  width: 100%;
 }
