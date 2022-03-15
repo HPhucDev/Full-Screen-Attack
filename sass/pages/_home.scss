@@ -1,0 +1,113 @@
+.main{
+    &__banner{
+        z-index: 1;
+    }
+    &__banner--mobile{
+        display: none;
+    }
+    &__products{
+        &--items{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &--card{
+            display: grid;
+            align-items: center;
+            justify-items: center;
+            padding: 0.8rem;
+            &--image{
+                &-iphone{
+                    border-radius: 20px;
+                    padding: 1rem 3rem 1rem 3rem;
+                    background-color: #f8f7f7;
+                    &:hover{
+                        box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.16);
+                        transform: scale3d(1.01,1.01,1.01);
+                    }
+                }
+                &-ipad{
+                    @extend .main__products--card--image-iphone;
+                }
+                &-mac{
+                    @extend .main__products--card--image-iphone;
+                } 
+                &-airpod{
+                    @extend .main__products--card--image-iphone;
+                }
+                &-applewatch{
+                    @extend .main__products--card--image-iphone;
+                } 
+                &-accessories{
+                    @extend .main__products--card--image-iphone;
+                }
+            }
+            &--title{
+                margin: 30px;
+                font-size: 25px;
+                font-family:sans-serif;
+                font-weight: bolder;
+                text-decoration: none;
+                color:  rgb(59, 59, 61);
+                &:hover{
+                    text-decoration: none;
+                    color: rgba(59, 59, 61, 0.671);
+                }
+            }
+        }
+    }
+    &__line{
+        width: 80%;
+    }     
+}
+@include maxw(900px) {
+    .main__products--card{
+        transform: scale(0.9);
+    }
+    .main{
+        &__banner{
+            display: none;
+            &--mobile{
+                display: block;
+            }
+        }
+    }
+}
+@include maxw(711px) {
+    .main__products--card{
+        &--image{
+            &-iphone{
+                padding: 0.7rem 1rem 1rem 0.7rem;
+            }
+        }
+        &--title{
+            font-size: 16px;
+        }
+    }   
+}
+@include maxw(600px) {
+    .main__products--card{
+        &--image{
+            &-iphone{
+                padding: 0.4rem 0.7rem 0.4rem 0.7rem;
+            }
+        }
+    }
+}
+@include maxw(540px) {
+    .main__products--card{
+        &--title{
+            font-size: 13px;
+        }
+    }
+}
+@include maxw(490px) {
+    .main__products--items{
+        display: grid;
+        width: 70%;
+        margin-left: 15%;
+
+    }
+}
+
+   
+   
